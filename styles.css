@@ -1,0 +1,290 @@
+
+
+    body {
+      background-color: #ffffff;
+    }
+
+    .custom-bg {
+      background-color: #ffb115;
+    }
+
+    .background-section {
+    background-image: url(PG6.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  .background-article {
+    background-color: #f0f0f0;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; 
+  }
+
+  .fixed-top {
+    position: fixed; /* ทำให้ header ติดอยู่กับหน้าจอ */
+    top: 0; /* ตั้งให้อยู่ที่ด้านบนสุดของหน้า */
+    left: 0; /* ตั้งให้ชิดขอบซ้าย */
+    width: 100%; /* ให้ header กินความกว้างทั้งหน้าจอ */
+    z-index: 1000; /* กำหนดลำดับชั้นของ z-index เพื่อให้ header อยู่เหนือเนื้อหาอื่น */
+  }
+  
+  /* เพิ่มการจัดระเบียบและช่องว่างในส่วนอื่นๆ */
+  body {
+    padding-top: 70px; /* ปรับเนื้อหาให้ไม่ทับกับ header เมื่อทำการเลื่อนหน้า */
+  }
+
+  .navbar-brand {
+    position: absolute;
+    top: 10px; /* ระยะห่างจากด้านบน */
+    left: 10px; /* ระยะห่างจากด้านซ้าย */
+  }
+
+
+  .navbar-nav .nav-link {
+  color: #ffffff; 
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #000000;
+}
+
+.itim-regular {
+    font-family: "Itim", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+a , h1,h2,h3,h4,h5,h6,p
+{
+    font-family: "Itim", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+      .bd-placeholder-img { font-size: 1.125rem; text-anchor: middle; }
+      .b-example-divider { width: 100%; height: 3rem; background: rgba(0, 0, 0, 0.1); border: 1px solid rgba(0, 0, 0, 0.15); }
+
+      
+      body {
+        padding-top: 60px;
+      }
+
+      .marketing .col-lg-4 {
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      /* rtl:begin:ignore */
+      .marketing .col-lg-4 p {
+        margin-right: .75rem;
+        margin-left: .75rem;
+      }
+
+      
+      
+
+      
+      
+      /* สไตล์สำหรับโฆษณาที่แสดง ของJAVA */
+.popup {
+  display: none;  /* เริ่มต้นให้ซ่อนไว้ */
+  position: fixed;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);  /* พื้นหลังโปร่งใส */
+  z-index: 1000;  /* ให้แสดงเหนือเนื้อหาหลัก */
+}
+
+/* การจัดการเนื้อหาภายในโฆษณา */
+.popup-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);  /* จัดให้อยู่กลางหน้าจอ */
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;  /* ให้ขนาดโฆษณากว้างประมาณ 80% ของหน้าจอ */
+}
+
+/* ปรับขนาดของภาพในโฆษณา */
+#ad-image {
+  width: 60%;  /* ให้ภาพขยายเต็มขนาดของ div */
+  height: auto;  /* ให้ความสูงของภาพคงที่ตามอัตราส่วน */
+}
+
+/* สไตล์สำหรับปุ่มปิด */
+#close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+  
+.footer-container {
+  display: flex; /* ใช้ Flexbox เพื่อจัดเรียงเนื้อหาภายใน footer */
+  justify-content: center; /* จัดเนื้อหาหลักให้มาอยู่กลางหน้าจอ */
+  align-items: center; /* จัดให้ footer อยู่กลางในแนวตั้ง */
+  padding: 20px;
+  width: 100%;
+}
+
+.footer-left {
+  text-align: left; /* ข้อความใน footer-left ชิดซ้าย */
+  margin-right: 50px; /* ช่องว่างระหว่าง footer-left และ footer-right */
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column; /* ให้ลิงก์แสดงในแนวตั้ง */
+  text-align: left; /* ให้ข้อความลิงก์อยู่ทางซ้าย */
+  justify-content: center; /* จัดให้ลิงก์ตรงกลางในแนวตั้ง */
+}
+
+.footer-right a {
+  margin-bottom: 10px; /* เพิ่มช่องว่างระหว่างลิงก์ */
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-right a:hover {
+  color: #007BFF; /* สีเมื่อเอาเมาส์ไปวาง */
+}
+
+.custom-hr {
+  border: 0; /* เอาขอบของ hr ออก */
+  border-top: 2px solid #333; /* กำหนดเส้นให้หนา 2px สีเทา */
+  margin: 20px 0; /* เพิ่มช่องว่างด้านบนและล่างของเส้น */
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Container for each image */
+.image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* Aspect ratio 4:3 */
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+/* Styling for images */
+.gallery-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  /* ใช้ contain เพื่อให้ภาพขยายหรือลดขนาดตามกรอบ แต่ไม่ตัดขอบ */
+  cursor: pointer;
+}
+
+/* Style for Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;  /* ใช้ contain ใน modal เพื่อให้ภาพไม่ถูกตัด */
+}
+
+/* ปรับตำแหน่งปุ่ม "×" ให้อยู่ด้านข้างของภาพ */
+.close {
+  position: absolute;
+  top: 50%; /* เลื่อนปุ่ม "×" ไปที่กลางแนวตั้งของภาพ */
+  right: -40px; /* ทำให้ปุ่มอยู่ทางขวาของภาพ */
+  transform: translateY(-50%); /* ทำให้ปุ่มอยู่กลางของภาพแนวตั้ง */
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 100; /* ให้ปุ่มอยู่บนสุด */
+}
+
+body {
+  cursor: url(New.png) 16 16, auto;
+}       
+
+/* เพิ่มความสูงของ header */
+.navbar {
+  padding-top: 20px; /* เพิ่ม padding บน */
+  padding-bottom: 20px; /* เพิ่ม padding ล่าง */
+}
+
+/* สไตล์สำหรับแสดงเวลาที่มุมบนซ้าย */
+#timeDisplay {
+  top: 40px; /* เว้นระยะจากขอบบน */
+  left: 40px; /* เว้นระยะจากขอบซ้าย */
+  font-family: "Itim", serif; /* ฟอนต์ที่ใช้ */
+}
+
+.wrapper {
+  margin-top: 50px;
+}
+
+.card {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: 3px solid #ddd;
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f8f9fa;
+}
+
+.card:hover {
+  background-color: #f5c972;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  font-size: 24px;
+  color: #007bff;
+}
+
+.card p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* กำหนดขนาดหน้าจอให้ดีขึ้น */
+@media (max-width: 768px) {
+  .card {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+body {
+  padding-top: 30px; /* ระยะห่างด้านบน */
+  padding-right: 20px; /* ระยะห่างด้านขวา */
+  padding-bottom: 30px; /* ระยะห่างด้านล่าง */
+  padding-left: 20px; /* ระยะห่างด้านซ้าย */
+}
